@@ -2,11 +2,19 @@
   "name": "follow-scroll",
   "version": "1.0.1",
   "type": "module",
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
+  "exports": {
+    ".": "./dist/follow-scroll.js",
+    "./react": "./dist/use-follow-scroll.js"
+  },
+  "types": "dist/index.d.ts",
   "peerDependencies": {
     "react": ">=16"
   },
@@ -14,10 +22,6 @@
     "react": {
       "optional": true
     }
-  },
-  "exports": {
-    ".": "./dist/follow-scroll.js",
-    "./react": "./dist/use-follow-scroll.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -32,12 +36,9 @@
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
     "semantic-release": "^24.2.1",
-    "typescript": "~5.6.3",
+    "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1",
-    "vite": "^6.0.7"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "packageManager": "pnpm@9.12.3"
+    "vite": "^6.0.7",
+    "vite-plugin-dts": "^4.4.0"
+  }
 }
