@@ -1,6 +1,5 @@
 {
   "name": "follow-scroll",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -17,8 +16,8 @@
     }
   },
   "exports": {
-    ".": "dist/follow-scroll.js",
-    "react": "dist/use-follow-scroll.js"
+    ".": "./dist/follow-scroll.js",
+    "./react": "./dist/use-follow-scroll.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
